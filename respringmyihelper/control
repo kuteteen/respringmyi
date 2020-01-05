@@ -1,0 +1,9 @@
+Package: me.conorthedev.respringmyi.helper
+Name: respringmyi-helper
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: The tweak that allows the respringmyi application to do its magic!
+Maintainer: ConorTheDev <con0r.b@protonmail.com>
+Author: ConorTheDev <con0r.b@protonmail.com>
+Section: Tweaks
