@@ -6,27 +6,25 @@
 //  Copyright © 2020 Conor Byrne. All rights reserved.
 //
 
-import WatchKit
 import Foundation
 import SwiftUI
 import WatchConnectivity
+import WatchKit
 
 class HostingController: WKHostingController<ContentView>, WCSessionDelegate {
-    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        
-    }
-    
+    func session(_: WCSession, activationDidCompleteWith _: WCSessionActivationState, error _: Error?) {}
+
     override init() {
         super.init()
-          
+
         if WCSession.isSupported() {
-            print("WCSession supported")
-            let session = WCSession.default
-            session.delegate = self
-            session.activate()
-        }
+             print("WCSession supported")
+             let session = WCSession.default
+             session.delegate = self
+             session.activate()
+         }
     }
-    
+
     override var body: ContentView {
         return ContentView()
     }
