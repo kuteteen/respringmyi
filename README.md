@@ -7,9 +7,13 @@ respringmyi works by using the [WatchConnectivity Framework](https://developer.a
 The way WatchConnectivity works requires you to have the iOS and watchOS App in the same project, when you build an app with theos it fakesigns, this can not be done for the Apple Watch as there is no jailbreak available in mass to the public in the time of writing this. When a watchOS Jailbreak comes out that is eligible (i.e. supported on watchOS 6.x and on most Apple Watches), I will rewrite this, but until then you can just install the app with Xcode, and use the helper tweak!
 
 ### How do I install this?
-Copy the file: ``me.conorthedev.respringmyi.helper_1.0_iphoneos-arm.deb`` from ``./respringmyihelper/packages/`` to your iDevice, install with Filza or ``dpkg -i (filename)``
+- Download the two files: ``me.conorthedev.respringmyi.helper_(version)_iphoneos-arm.deb`` and ``respringmyi_application_(version).ipa`` from the [latest release](https://github.com/ConorTheDev/respringmyi/releases). 
 
-Then, open Xcode, select your team for signing and run!
+- Install ``me.conorthedev.respringmyi.helper_(version)_iphoneos-arm.deb`` either by copying it to your iDevice, and using Filza to install it, or using the command ``dpkg -i path/to/me.conorthedev.respringmyi.helper_(version)_iphoneos-arm.deb``.
+
+- Install the IPA file with ReProvision on your iDevice, or with AltDeploy by [pixelomer](http://twitter.com/pixelomer) from a Mac!
+
+- If you don't see the respringmyi app on your Apple Watch, open the Apple Watch App, scroll down to the bottom where it says 'Available Apps' and click 'INSTALL'
 
 #### Other Links
 - [Twitter](https://twitter.com/ConorTheDev)
